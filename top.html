@@ -20,13 +20,64 @@
             <div class="about-top">
                 <h2>About</h2>
                 <div class="about">
-                    <img class="top2" src="Mask group2.png" alt="Mask group2">
-                    <h3>KAKERU MIYAICHI</h3>
-                    <p>テキストテキストテキストテキストテキストテキストテキスト<br>
-                    テキストテキストテキストテキストテキストテキストテキスト<br>
-                    テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div class="about-left"><img class="top2" src="Mask group2.png" alt="Mask group2"></div>
+                    <div class="about-right"><h3>KAKERU MIYAICHI</h3>
+                        <p>テキストテキストテキストテキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
                 </div>
+
+                <style>
+                    .about-left{
+                        position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+                    }
+                    .about{
+                        max-width: 528px;
+    margin: 0 auto;
+    width: 100%;
+                    }
+                </style>
                 <h2>Bicycle</h2>
+                <div class="bicycle-wrap">
+                    <div class="bicycle-card">
+                        <div class="bicycle-card-img"><img src="bicycle1.png" alt="bicycle1"></div>
+                        <div class="bicycle-card-text">
+                            <h4 class="contents">タイトルタイトル</h4>
+                            <p class="contents">テキストテキストテキスト</p>
+                        </div>
+                    </div>
+                    <div class="bicycle-card">
+                        <div class="bicycle-card-img"><img src="bicycle2.png" alt="bicycle1"></div>
+                        <div class="bicycle-card-text">
+                            <h4 class="contents">タイトルタイトル</h4>
+                            <p class="contents">テキストテキストテキスト</p>
+                        </div>
+                    </div>
+                    <div class="bicycle-card">
+                        <div class="bicycle-card-img"><img src="bicycle3.png" alt="bicycle1"></div>
+                        <div class="bicycle-card-text">
+                            <h4 class="contents">タイトルタイトル</h4>
+                            <p class="contents">テキストテキストテキスト</p>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .bicycle-wrap{
+                        display: flex;
+    max-width: 100%;
+    position: relative;
+                    }
+                    .bicycle-card{
+                        width: 33%;
+                    }
+                    .bicycle-card-img img{
+                        width: 100%;
+                    }
+                </style>
                 <div class="icon">
                     <img src="bicycle1.png">
                     <h4 class="contents">タイトルタイトル</h4>
