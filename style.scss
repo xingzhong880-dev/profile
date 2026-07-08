@@ -1,0 +1,106 @@
+*{
+    box-sizing:border-box;
+    font-family:"Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+$color: #393E46;
+@mixin text($color){
+    color: $color;
+    font-size: 50px;
+    text-align:center;
+    padding: 100px 0 100px 0;
+    text-decoration: underline;
+    text-decoration-color: $color;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20px;
+}
+@mixin card($color){
+    color: $color;
+    font-size: 15px;
+}
+header{
+    height:70px;
+    width: 100%;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+    h1{
+        float:left;
+        color:white;
+        background-color: $color;
+        padding: 3px 20px;
+        margin-top:10px;
+    }
+    div{
+        float: right;
+        margin: 0;
+        padding: 0;
+    }   
+        a{
+            color: $color;
+            text-align: right;
+            float:left;
+            padding-left: 20px;
+            line-height: 70px;
+            text-decoration: none;
+        }
+}
+main{
+    margin-top: 70px;
+    .top{
+        width: 100%;
+        max-width: 100%;
+    }
+    .about-top{
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 4%;
+        h2{
+            @include text($color);
+        }
+            .about{
+                text-align:center;
+                .top2{
+                    float:left;
+                    width: 100px;
+                }
+                h3{
+                    color: $color;
+                    font-size: 30px;
+                }
+                p{
+                    color: $color;
+                    font-size: 15px;
+                }
+            }
+        .icon{   
+            img{
+                float:left;
+                width: 28%;
+                margin-right: 5%;
+            }
+            p{
+                @include card($color);
+            }
+            .contents{
+                display:inline-block;
+                margin-top:10px;
+                font-size:15px;
+                color:$color;
+            }
+        }
+    }
+}
+.clear{
+  clear:left;
+}
+footer{
+    color: $color;
+    font-size: 10px;
+    text-align:center;
+    padding: 100px 0 10px 0;
+}

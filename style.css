@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+header h1 {
+  float: left;
+  color: white;
+  background-color: #393E46;
+  padding: 3px 20px;
+  margin-top: 10px;
+}
+header div {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+header a {
+  color: #393E46;
+  text-align: right;
+  float: left;
+  padding-left: 20px;
+  line-height: 70px;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 70px;
+}
+main .top {
+  width: 100%;
+  max-width: 100%;
+}
+main .about-top {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+main .about-top h2 {
+  color: #393E46;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px 0 100px 0;
+  text-decoration: underline;
+  text-decoration-color: #393E46;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 20px;
+}
+main .about-top .about {
+  text-align: center;
+}
+main .about-top .about .top2 {
+  float: left;
+  width: 100px;
+}
+main .about-top .about h3 {
+  color: #393E46;
+  font-size: 30px;
+}
+main .about-top .about p {
+  color: #393E46;
+  font-size: 15px;
+}
+main .about-top .icon img {
+  float: left;
+  width: 28%;
+  margin-right: 5%;
+}
+main .about-top .icon p {
+  color: #393E46;
+  font-size: 15px;
+}
+main .about-top .icon .contents {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #393E46;
+}
+
+.clear {
+  clear: left;
+}
+
+footer {
+  color: #393E46;
+  font-size: 10px;
+  text-align: center;
+  padding: 100px 0 10px 0;
+}/*# sourceMappingURL=style.css.map */
