@@ -1,0 +1,78 @@
+*{
+    box-sizing:border-box;
+    font-family:"Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+$color: #393E46;
+@mixin card($color){
+    color: $color;
+    font-size:14.4px;
+}
+header{
+    height:70px;
+    width: 100%;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    padding: 0 17%;
+    z-index:10;
+    h1{
+        float:left;
+        color:white;
+        background-color: $color;
+        padding: 3px 20px;
+        margin-top:10px;
+    }
+    div{
+        float: right;
+        margin: 0;
+        padding: 0;
+    }   
+        a{
+            color: $color;
+            text-align: right;
+            float:left;
+            padding-left: 20px;
+            line-height: 70px;
+            font-size:14.4px;
+            text-decoration: none;
+        }
+}
+main{
+    margin-top: 70px;
+    .top{
+        padding: 0 17%;
+        width: 100%;
+        max-width: 100%;
+    }
+    .about-top{ 
+        padding: 0 19%;
+        width: 100%;
+        max-width: 100%;
+        h2{
+            color: $color;
+            font-size: 21.6px;
+            margin:30px 0;
+        }
+        p{
+            @include card($color);
+            margin-top:20px;
+        }
+    }
+    .bicycle-card-text{
+        text-align:center;
+        margin:70px 0 50px 0;
+        a{
+            @include card($color);
+            text-decoration: none;
+        }
+    }
+}
+footer{
+    color: $color;
+    font-size: 10px;
+    text-align:center;
+    padding: 100px 0 10px 0;
+}

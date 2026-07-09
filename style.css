@@ -12,9 +12,9 @@ header {
   background-color: white;
   position: fixed;
   top: 0;
-  max-width: 960px;
   margin: 0 auto;
-  padding: 0 4%;
+  padding: 0 17%;
+  z-index: 10;
 }
 header h1 {
   float: left;
@@ -34,6 +34,7 @@ header a {
   float: left;
   padding-left: 20px;
   line-height: 70px;
+  font-size: 14.4px;
   text-decoration: none;
 }
 
@@ -54,13 +55,27 @@ main .about-top h2 {
   font-size: 50px;
   text-align: center;
   padding: 100px 0 100px 0;
-  text-decoration: underline;
-  text-decoration-color: #393E46;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 20px;
+}
+main .about-top h2::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 2px;
+  background-color: #393E46;
+  margin: 10px auto 0;
 }
 main .about-top .about {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 528px;
+  margin: 0 auto;
+  width: 100%;
+}
+main .about-top .about .about-left {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
 }
 main .about-top .about .top2 {
   float: left;
@@ -68,26 +83,39 @@ main .about-top .about .top2 {
 }
 main .about-top .about h3 {
   color: #393E46;
-  font-size: 30px;
+  font-size: 16px;
 }
 main .about-top .about p {
   color: #393E46;
-  font-size: 15px;
+  font-size: 14.4px;
 }
-main .about-top .icon img {
-  float: left;
-  width: 28%;
-  margin-right: 5%;
+main .about-top .bicycle-wrap {
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  justify-content: space-between;
 }
-main .about-top .icon p {
+main .about-top .bicycle-wrap .bicycle-card {
+  width: 31%;
+}
+main .about-top .bicycle-wrap .bicycle-card-img img {
+  width: 100%;
+}
+main .about-top .bicycle-wrap p {
   color: #393E46;
-  font-size: 15px;
+  font-size: 14.4px;
 }
-main .about-top .icon .contents {
+main .about-top .bicycle-wrap .bicycle-card-text {
+  text-align: center;
+}
+main .about-top .bicycle-wrap .contents {
   display: inline-block;
   margin-top: 10px;
-  font-size: 15px;
   color: #393E46;
+}
+main .about-top .bicycle-wrap a {
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .clear {

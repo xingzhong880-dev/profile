@@ -1,0 +1,15 @@
+@media (max-width: 670px) {
+    header{
+        padding: 0 4%;
+    }
+    main .top{
+        padding: 0 4%;
+        width: 100%;
+        max-width: 100%;
+    }
+    main .about-top{ 
+        padding: 0 4%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
