@@ -1,5 +1,26 @@
 @media (max-width: 670px) {
-    .top2{
-
+    header{
+        padding: 0 4%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-left{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .bicycle-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .about-top .bicycle-wrap .bicycle-card{
+        width: 100%;
+    }
+    main .about-top .bicycle-wrap .bicycle-card-img img{
+        width: 100%;
+    }
+    .bicycle-card-text p{
+        padding-bottom: 30px;
     }
 }
